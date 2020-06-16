@@ -34,19 +34,19 @@ This short howto describes step-by-step how to install the MMDVMHost-Dashboard o
 	
 	If you use a Raspian Wheezy and Raspbian Jessie use:
 
-	>sudo apt-get install php5-common php5-cgi php5
+	>sudo apt-get install php-common php-cgi php
 	
 	If you use a Raspian Stretch use:
 	
-	>sudo apt-get install php7.3-common php7.3-cgi php
+	>sudo apt-get install php-common php-cgi php
 
 if you want to use the sqlite3-database based resolving of the operator-names you need following, too Raspian Wheezy and Raspbian Jessie:
 
-	>sudo apt-get install sqlite3 php5-sqlite
+	>sudo apt-get install sqlite3 php-sqlite
 	
-Raspian Stretch:
+Raspian Buster:
 
-	>sudo apt-get install sqlite3 php7.0-sqlite
+	>sudo apt-get install sqlite3 php-sqlite
 
 Now continue with:
 
@@ -68,7 +68,7 @@ Now continue with:
 
 8. Next, you need to copy the files into the webroot so they can be served by lighttpd:
 
-	If you are using Raspbian Jessie and Raspian Stretch, run:
+	If you are using Raspbian Jessie and Raspian Buster, run:
 
 	>sudo cp -R /home/pi/MMDVMHost-Dashboard/* /var/www/html/	
 
